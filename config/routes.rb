@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'sessions/login'
+
+  get 'sessions/login_attempt'
+
+  get 'sessions/logout'
+
   resources :accessories
 
   resources :bikes
