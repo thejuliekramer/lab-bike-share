@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+  root 'users#index'
+=======
   get 'sessions/login'
 
   get 'sessions/login_attempt'
@@ -6,11 +9,11 @@ Rails.application.routes.draw do
   get 'sessions/logout'
 
   resources :accessories
+>>>>>>> 912cbeb478248c2c6e0c3556def7aeb1e2c2d006
 
+  resources :accessories
   resources :bikes
-
   resources :checkouts
-
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
