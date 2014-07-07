@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :bikes
+
   resources :checkouts
 
   resources :users
