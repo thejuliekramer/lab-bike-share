@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @accessory.type %>
+</p>
+
+<p>
+  <strong>Not missing:</strong>
+  <%= @accessory.not_missing %>
+</p>
+
+<%= link_to 'Edit', edit_accessory_path(@accessory) %> |
+<%= link_to 'Back', accessories_path %>
