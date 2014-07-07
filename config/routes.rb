@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   root 'users#index'
 
   # SESSION routes
-  get "login", to: "session#login"
-  post "login", to: "session#login_attempt"
-  get "logout", to: "session#logout" 
+  get "login", to: "sessions#login"
+  post "login", to: "sessions#login_attempt"
+  get "logout", to: "sessions#logout" 
 
   resources :accessories
   resources :bikes
