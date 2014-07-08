@@ -9275,3 +9275,489 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:24 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:29:54 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:29:55 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:15 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:22 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:32 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:40 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:30:50 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:30:59 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:30:59 -0400
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:00 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:31:21 -0400
