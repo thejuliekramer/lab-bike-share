@@ -9,15 +9,20 @@
 </head>
 <body>
 
-<% if flash[:notice] %>
-	<div id="notice"><%= flash[:notice] %></div>
-<% elsif flash[:success] %>
-	<div id="success"><%= flash[:success] %></div>
-<% end %>
+<main>
+	<% if flash[:notice] %>
+		<div id="notice"><%= flash[:notice] %></div>
+	<% elsif flash[:success] %>
+		<div id="success"><%= flash[:success] %></div>
+	<% end %>
 
-<%= link_to "Logout", "/logout" if @current_user %>
+	<% if @current_user %>
+		<%= @current_user.email %>  <figure class="avatar"><%= image_tag @current_user.picture %></figure>  
+		<%= link_to "Logout", "/logout", class: "btn-default" %>
+	<% end %>
 
-<%= yield %>
+	<%= yield %>
+</main>
 
 </body>
 </html>
