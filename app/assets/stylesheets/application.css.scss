@@ -49,7 +49,17 @@ body {
 	background-color: #FFF;
 	border: 2px solid;
 	border-color: #20bed2;
+	color: #20bed2;
+	border-radius: 2px;
 }
 
+.btn:hover {
+	font: 18px "Quicksand", sans-serif;
+	background-color: #20bed2;
+	border: 2px solid;
+	border-color: #20bed2;
+	color: #FFF;
+	border-radius: 2px;
+}
 
 
