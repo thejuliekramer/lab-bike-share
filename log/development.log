@@ -10917,3 +10917,59 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:46:48 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:46:48 -0400
+  [1m[36m (82.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140707221302)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (8.3ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying(255), "password_digest" character varying(255), "admin" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140707221302"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCheckouts (20140707221439)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (4.5ms)[0m  [1mCREATE TABLE "checkouts" ("id" serial primary key, "user_id" integer, "bike_id" integer, "returned_at" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.3ms)[0m  CREATE  INDEX  "index_checkouts_on_user_id" ON "checkouts"  ("user_id")
+  [1m[36m (26.7ms)[0m  [1mCREATE  INDEX  "index_checkouts_on_bike_id" ON "checkouts"  ("bike_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140707221439"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBikes (20140707221635)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (6.1ms)[0m  [1mCREATE TABLE "bikes" ("id" serial primary key, "lock_password" character varying(255), "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140707221635"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAccessories (20140707222027)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "accessories" ("id" serial primary key, "type" character varying(255), "not_missing" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140707222027"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddBikeIdToAccessories (20140707222241)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (53.4ms)[0m  [1mALTER TABLE "accessories" ADD COLUMN "bike_id" integer[0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_accessories_on_bike_id" ON "accessories"  ("bike_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140707222241"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Migrating to AddAttachmentAvatarToUsers (20140708171529)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD COLUMN "avatar_file_name" character varying(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "avatar_content_type" character varying(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD COLUMN "avatar_file_size" integer
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "avatar_updated_at" timestamp[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140708171529"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttachmentImageToBikes (20140708172009)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "bikes" ADD COLUMN "image_file_name" character varying(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "bikes" ADD COLUMN "image_content_type" character varying(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "bikes" ADD COLUMN "image_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "bikes" ADD COLUMN "image_updated_at" timestamp
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140708172009"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Migrating to AddAttachmentImageToAccessories (20140708172016)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.7ms)[0m  ALTER TABLE "accessories" ADD COLUMN "image_file_name" character varying(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "accessories" ADD COLUMN "image_content_type" character varying(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "accessories" ADD COLUMN "image_file_size" integer
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "accessories" ADD COLUMN "image_updated_at" timestamp[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140708172016"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

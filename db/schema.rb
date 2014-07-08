@@ -41,18 +41,6 @@ ActiveRecord::Schema.define(version: 20140708172016) do
     t.datetime "image_updated_at"
   end
 
-  create_table "carts", force: true do |t|
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "categories", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "checkouts", force: true do |t|
     t.integer  "user_id"
     t.integer  "bike_id"
@@ -63,56 +51,6 @@ ActiveRecord::Schema.define(version: 20140708172016) do
 
   add_index "checkouts", ["bike_id"], name: "index_checkouts_on_bike_id", using: :btree
   add_index "checkouts", ["user_id"], name: "index_checkouts_on_user_id", using: :btree
-
-  create_table "photos", force: true do |t|
-    t.string   "url"
-    t.integer  "product_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "photos", ["product_id"], name: "index_photos_on_product_id", using: :btree
-
-  create_table "products", force: true do |t|
-    t.string   "name"
-    t.integer  "price_in_cents"
-    t.integer  "quantity"
-    t.text     "description"
-    t.integer  "category_id"
-    t.boolean  "featured"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "photo_updated_at"
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
-  end
-
-  add_index "products", ["category_id"], name: "index_products_on_category_id", using: :btree
-
-  create_table "reviews", force: true do |t|
-    t.string   "title"
-    t.text     "comment"
-    t.integer  "rating"
-    t.integer  "product_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "reviews", ["product_id"], name: "index_reviews_on_product_id", using: :btree
-  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id", using: :btree
-
-  create_table "things", force: true do |t|
-    t.string   "goal"
-    t.string   "details"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "users", force: true do |t|
     t.string   "username"
