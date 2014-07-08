@@ -1,14 +1,14 @@
 class User < ActiveRecord::Base
 	has_many :checkouts, dependent: :destroy
 
-	has_secure_password
-
-	validates :username, presence: true,
-	                     uniqueness: { case_sensitive: false },
-	                     length: { minimum: 2 }
-
-	validates :admin,    inclusion: [true, false]
-
-	has_attached_file :avatar, styles: { medium: "350x350#", thumb: "100x100#" } #, :default_url => "/images/:style/missing.png"
-	validates_attachment_content_type :avatar, content_type: /^image\/(png|gif|jpeg)/
+	def self.create_with_omniauth(auth)
+		create! do |user|
+			user.provider = auth["provider"]
+			user.uid = auth["uid"]
+			user.email = auth["info"]["email"]
+			user.picture = auth["info"]["picture"]
+			# Admin access not working :/
+			# user.admin = true if auth["extra"]["raw_info"]["admin_of"]["name"] == "The LAB Miami" rescue false
+		end
+	end
 end

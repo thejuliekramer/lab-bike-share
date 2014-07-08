@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   root 'users#index'
 
+  get "auth/cobot", to: "auth#cobot"
+  get "/auth/cobot/callback", to: "sessions#create"
+
   # SESSION routes
   get "login", to: "sessions#login"
   post "login", to: "sessions#login_attempt"
