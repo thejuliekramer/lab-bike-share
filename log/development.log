@@ -10973,3 +10973,1099 @@ Migrating to AddAttachmentImageToAccessories (20140708172016)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140708172016"]]
   [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-08 15:24:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (10.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :redirect_to_login rendered or redirected
+Completed 302 Found in 84ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:24:38 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 341ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:38:13 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 363ms
+
+ActionView::Template::Error (Invalid CSS after "...bkit:    false ": expected "}", was "!global;"
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/addons/_prefixer.scss:40)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/addons/_prefixer.scss:40
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:38:27 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 118ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:39:44 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 102ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:39:49 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:40:01 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 85ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:41:03 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 108ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:41:14 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 93ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:41:43 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 84ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:42:01 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 96ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:42:19 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 89ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $i..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:23)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-gradient-parser.scss:23
+  app/assets/stylesheets/bourbon/_bourbon.scss:11
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:42:31 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:42:52 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.5ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:43:03 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 85ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 221ms (Views: 218.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:26 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:55 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"julie", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (71.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = 'julie' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 144ms (Views: 20.4ms | ActiveRecord: 73.5ms)
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:47:59 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:48:04 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"julie", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = 'julie' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 20.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:05 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"juliekramer", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = 'juliekramer' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:18 -0400
+
+
+Started GET "/bike" for 127.0.0.1 at 2014-07-08 15:48:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bike"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (47.6ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :redirect_to_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 255ms (Views: 254.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:37 -0400
+
+
+Started GET "/bikes" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+Processing by BikesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :redirect_to_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:40 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:48:43 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"walter", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = 'walter' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:49:15 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:52:45 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"walter", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = 'walter' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 1310ms
+
+ActionView::Template::Error (Invalid CSS after "      webkit-image": expected ")", was ": -webkit- + $p..."
+  (in /Users/Julie/Desktop/lab-bike-share/app/assets/stylesheets/bourbon/_bourbon.scss:21)):
+    3: <head>
+    4:   <title>LabBikeShare</title>
+    5:   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/assets/stylesheets/bourbon/helpers/_linear-angle-parser.scss:21
+  app/assets/stylesheets/bourbon/_bourbon.scss:10
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2358752153860159001_70102229403780'
+  app/controllers/sessions_controller.rb:16:in `login_attempt'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:52:55 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"walter", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = 'walter' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 452ms (Views: 448.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:52:56 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"julie", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = 'julie' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:53:06 -0400
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"julie", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = 'julie' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 116ms (Views: 102.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:30 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"julie", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = 'julie' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 15:58:37 -0400
+  [1m[36m (32.4ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (79.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."username") = LOWER('julie') LIMIT 1
+  [1m[36mSQL (115.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "password_digest", "updated_at", "username") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["admin", "t"], ["created_at", "2014-07-08 20:02:09.977205"], ["password_digest", "password"], ["updated_at", "2014-07-08 20:02:09.977205"], ["username", "julie"]]
+  [1m[35m (24.9ms)[0m  COMMIT
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 16:02:23 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "username"=>"julie", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (35.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = 'julie' LIMIT 1
+Completed 500 Internal Server Error in 49ms
+
+BCrypt::Errors::InvalidHash (invalid hash):
+  app/controllers/sessions_controller.rb:10:in `login_attempt'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

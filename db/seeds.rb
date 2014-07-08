@@ -10,10 +10,12 @@ user_list = [
 ["walter", true],
 ["julie", true],
 ["frank", true]
+["ed", true]
 ]
 
 user_list.each do |username, admin|
-	User.create(username: username,
+	user = User.new(username: username,
 	admin: admin,
-	password_digest: 'password')
+	password_digest: "password")
+	user.save!
 end
