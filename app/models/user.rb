@@ -11,4 +11,8 @@ class User < ActiveRecord::Base
 			# user.admin = true if auth["extra"]["raw_info"]["admin_of"]["name"] == "The LAB Miami" rescue false
 		end
 	end
+
+	def has_bike?
+		self.checkouts.where(returned_at: nil).any?
+	end
 end

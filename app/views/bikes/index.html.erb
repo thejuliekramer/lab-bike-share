@@ -6,6 +6,14 @@
   <%= bike.name %>
 <!-- bike image -->
 
+<%= "Checked out!" if bike.is_checked_out? %>
+
+<%= form_for(@checkout) do |f| %>
+  <%= f.hidden_field :user_id, value: @current_user.id %>
+  <%= f.hidden_field :bike_id, value: bike.id %>
+  <%= f.submit "Check #{bike.name} out!" %>
+<% end %>
+
 <% end %>
 
 <!-- clickable thumbnails -->

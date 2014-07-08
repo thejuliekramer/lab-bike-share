@@ -5,6 +5,7 @@ class BikesController < ApplicationController
   # GET /bikes.json
   def index
     @bikes = Bike.all
+    @checkout = Checkout.new
   end
 
   # GET /bikes/1
