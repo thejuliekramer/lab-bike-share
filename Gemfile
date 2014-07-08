@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 
+gem 'omniauth'
+gem 'omniauth_cobot'
+
 # To encrypt password
 gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
 
