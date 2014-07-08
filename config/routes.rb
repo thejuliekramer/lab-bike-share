@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  
+
   root 'users#index'
-  get 'sessions/login'
 
-  get 'sessions/login_attempt'
-
-  get 'sessions/logout'
+  # SESSION routes
+  get "login", to: "sessions#login"
+  post "login", to: "sessions#login_attempt"
+  get "logout", to: "sessions#logout" 
 
   resources :accessories
   resources :bikes
