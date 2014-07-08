@@ -44,22 +44,23 @@ body {
 	right: 10%;
 }
 
-.btn {
+.btn-default {
 	font: 18px "Quicksand", sans-serif;
 	background-color: #FFF;
 	border: 2px solid;
 	border-color: #20bed2;
 	color: #20bed2;
 	border-radius: 2px;
+	cursor: pointer;
+	webkit-transition: all 0.1s linear;
+	moz-transition: all 0.1s linear;
+	o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
 }
 
-.btn:hover {
-	font: 18px "Quicksand", sans-serif;
+.btn-default:hover {
 	background-color: #20bed2;
-	border: 2px solid;
-	border-color: #20bed2;
 	color: #FFF;
-	border-radius: 2px;
 }
 
 
