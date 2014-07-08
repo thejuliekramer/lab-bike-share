@@ -63,4 +63,37 @@ body {
 	color: #FFF;
 }
 
+.box-item {
+	display: inline-block;
+	width: 450px;
+	height: 200px;
+}
+.selection {
+	cursor: pointer;
+	webkit-transition: all 0.1s linear;
+	moz-transition: all 0.1s linear;
+	o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.selection:hover {
+	border-style: solid;
+	border-width: 0px 20px;
+	border-color: #20bed2;
+	box-shadow: 5px 5px 5px 2px #888;
+
+}
+
+.bike {
+	margin-left: 10%;
+	padding-bottom: 5%;
+}
+
+.bike-selection {
+	text-align: center;
+	vertical-align: center;
+	margin: 0 auto;
+}
+
+
+
 
