@@ -1106,6 +1106,7 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-07 19:56:18 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 19:56:18 -0400
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2014-07-08 11:50:09 -0400
@@ -3216,3 +3217,33 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 13:24:35 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 13:24:35 -0400
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentAvatarToUsers (20140708171529)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (6.1ms)[0m  [1mALTER TABLE "users" ADD COLUMN "avatar_file_name" character varying(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD COLUMN "avatar_content_type" character varying(255)
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD COLUMN "avatar_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD COLUMN "avatar_updated_at" timestamp
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140708171529"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentImageToBikes (20140708172009)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (10.2ms)[0m  [1mALTER TABLE "bikes" ADD COLUMN "image_file_name" character varying(255)[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "bikes" ADD COLUMN "image_content_type" character varying(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "bikes" ADD COLUMN "image_file_size" integer[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "bikes" ADD COLUMN "image_updated_at" timestamp
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140708172009"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Migrating to AddAttachmentImageToAccessories (20140708172016)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (5.4ms)[0m  ALTER TABLE "accessories" ADD COLUMN "image_file_name" character varying(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "accessories" ADD COLUMN "image_content_type" character varying(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "accessories" ADD COLUMN "image_file_size" integer
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "accessories" ADD COLUMN "image_updated_at" timestamp[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140708172016"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+>>>>>>> 8dd8053ecb155ba628b186a12178949cf0171066
