@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'users#index'
+  root 'bikes#index'
 
   # SESSION routes
   get "login", to: "sessions#login"
