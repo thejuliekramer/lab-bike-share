@@ -8605,3 +8605,673 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 13:53:39 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 13:53:39 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 35.2ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:30 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:38 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:43 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 13:57:52 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:00:48 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:36 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:02:54 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 14:04:21 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:22 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:04:31 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 50.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:20 -0400
+
+
+Started POST "/login" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPZ1CDCjIY0RD2lr3BcpJmySdHdffKUWXqEykb5TS1U=", "username"=>"", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."username" = '' LIMIT 1[0m
+  Rendered sessions/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:26 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accessories.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/checkouts.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 14:28:29 -0400
