@@ -12,7 +12,8 @@ class SessionsController < ApplicationController
 			session[:user_id] = user.id
 			redirect_to root_path, flash: { success: "Welcome back.  You are now logged in as #{user.username}" }
 		else
-			render :login, notice: "Invalid Username or Password"
+			flash[:notice] = "Invalid Username or Password"
+			render :login
 		end
 	end
 
