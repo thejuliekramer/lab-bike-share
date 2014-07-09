@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+
+
+$(document).ready(function(){
+    $("body").css("display", "none");
+    $("body").fadeIn(200); 
+    $('a').click(function(e){
+        redirect = $(this).attr('href');
+        e.preventDefault();
+        $('body').fadeOut(200, function(){
+            document.location.href = redirect
+        });
+    });
+})
