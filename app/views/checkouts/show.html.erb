@@ -6,8 +6,13 @@
 </p>
 
 <p>
-  <strong>Bike:</strong>
-  <%= @checkout.bike %>
+	<%= @checkout.bike.name %>
+	<br>
+  <strong>Accessory:</strong>
+  <% this = @checkout.bike %>
+  <% this.accessories.each do |accessory| %>
+  <%= accessory.name %>
+  <% end %>
 </p>
 
 <p>
