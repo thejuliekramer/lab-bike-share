@@ -1,7 +1,7 @@
 class CreateAccessories < ActiveRecord::Migration
   def change
     create_table :accessories do |t|
-      t.string :type
+      t.string :name
       t.boolean :not_missing
 
       t.timestamps
