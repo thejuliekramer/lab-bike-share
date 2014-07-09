@@ -4,7 +4,7 @@
 		<%= image_tag bike.image.url(:medium) %>
 
 		<% if bike.is_checked_out? %>
-			Checked out!
+			<p>This bike is currently checked out.</p>
 		<% else %>
 			<%= form_for(@checkout) do |f| %>
 				<%= f.hidden_field :user_id, value: @current_user.id %>

@@ -107,9 +107,9 @@ input[type=submit] {
 // Bikes
 //
 
-.bikes {
+.bike {
 	@include transition(all 0.1s linear);
-	padding: 0 20px;
+	padding: 0 20px 20px 20px;
 	border: 20px solid transparent;
 	border-style: solid;
 	border-width: 0 20px 0 20px;
@@ -127,6 +127,12 @@ input[type=submit] {
 }
 .not-available {
 	opacity: .3;
+	&:hover img {
+		@include transform();
+	}
+	p {
+		text-align: center;
+	}
 }
 
 //
