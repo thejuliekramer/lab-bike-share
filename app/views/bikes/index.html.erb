@@ -1,9 +1,10 @@
 <% if @current_user.has_bike? %>
 	You've already got <%= @checkout.bike.name %>.
+	<%= image_tag @checkout.bike.image.url(:medium) %>
 
 	<%= form_for(@checkout) do |f| %>
 		<%= f.hidden_field :returned_at, value: Time.now %>
-		<%= f.submit "Return" %>
+		<%= f.submit "Return #{@checkout.bike.name}" %>
 	<% end %>
 
 
