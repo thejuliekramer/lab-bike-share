@@ -27403,6 +27403,7 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 16:43:32 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 16:43:32 -0400
+<<<<<<< HEAD
 
 
 Started GET "/checkouts/1" for 127.0.0.1 at 2014-07-09 16:52:56 -0400
@@ -29489,3 +29490,1857 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:15:13
 
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:15:13 -0400
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/accessories/new" for 127.0.0.1 at 2014-07-09 16:53:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AccessoriesController#new as HTML
+  [1m[35mUser Load (20.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered accessories/_form.html.erb (198.3ms)
+  Rendered accessories/new.html.erb within layouts/application (205.7ms)
+Completed 500 Internal Server Error in 351ms
+
+ActionView::Template::Error (undefined method `name' for #<Accessory:0x007f8a43c15370>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :name %><br>
+    16:     <%= f.text_field :name %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :not_missing %><br>
+  app/views/accessories/_form.html.erb:16:in `block in _app_views_accessories__form_html_erb__4556909958963994702_70115907723680'
+  app/views/accessories/_form.html.erb:1:in `_app_views_accessories__form_html_erb__4556909958963994702_70115907723680'
+  app/views/accessories/new.html.erb:3:in `_app_views_accessories_new_html_erb__4364971934233188707_70115908042540'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.8ms)
+
+
+Started GET "/accessories/" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+Processing by AccessoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.7ms)[0m  SELECT "accessories".* FROM "accessories"
+  Rendered accessories/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 375ms (Views: 370.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 16:53:22 -0400
+
+
+Started GET "/accessories/new" for 127.0.0.1 at 2014-07-09 16:53:38 -0400
+Processing by AccessoriesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered accessories/_form.html.erb (3.0ms)
+  Rendered accessories/new.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `name' for #<Accessory:0x007f8a436169d8>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :name %><br>
+    16:     <%= f.text_field :name %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :not_missing %><br>
+  app/views/accessories/_form.html.erb:16:in `block in _app_views_accessories__form_html_erb__4556909958963994702_70115907723680'
+  app/views/accessories/_form.html.erb:1:in `_app_views_accessories__form_html_erb__4556909958963994702_70115907723680'
+  app/views/accessories/new.html.erb:3:in `_app_views_accessories_new_html_erb__4364971934233188707_70115908042540'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.8ms)
+
+
+Started GET "/accessories/new" for 127.0.0.1 at 2014-07-09 16:54:18 -0400
+Processing by AccessoriesController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered accessories/_form.html.erb (22.9ms)
+  Rendered accessories/new.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 16:54:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.9ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/accessories/new" for 127.0.0.1 at 2014-07-09 16:55:46 -0400
+Processing by AccessoriesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered accessories/_form.html.erb (14.9ms)
+  Rendered accessories/new.html.erb within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (undefined method `name' for #<Accessory:0x007f8a473549d0>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :name %><br>
+    16:     <%= f.text_field :name %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :not_missing %><br>
+  app/views/accessories/_form.html.erb:16:in `block in _app_views_accessories__form_html_erb__4556909958963994702_70115938411660'
+  app/views/accessories/_form.html.erb:1:in `_app_views_accessories__form_html_erb__4556909958963994702_70115938411660'
+  app/views/accessories/new.html.erb:3:in `_app_views_accessories_new_html_erb__4364971934233188707_70115908042540'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.0ms)
+
+
+Started GET "/accessories/new" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+Processing by AccessoriesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered accessories/_form.html.erb (4.9ms)
+  Rendered accessories/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 105ms (Views: 101.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 16:56:03 -0400
+
+
+Started POST "/accessories" for 127.0.0.1 at 2014-07-09 16:56:14 -0400
+Processing by AccessoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "accessory"=>{"type"=>"Helmut", "not_missing"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8a45df3870 @tempfile=#<Tempfile:/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/RackMultipart20140709-49716-1oqd2pr>, @original_filename="Bike_helmet2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"accessory[image]\"; filename=\"Bike_helmet2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Accessory"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameters: type
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1e1c6xd.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps8.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps8.jpg[0]'
+Command :: convert '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps8.jpg[0]' -auto-orient -resize "x350" -crop "350x350+71+0" +repage '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps820140709-49716-tn6e5f'
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps820140709-49716-tn6e5f'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps8.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps8.jpg[0]'
+Command :: convert '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps8.jpg[0]' -auto-orient -resize "x100" -crop "100x100+20+0" +repage '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps820140709-49716-9g4g56'
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-49716-1mhxps820140709-49716-9g4g56'
+  [1m[35m (30.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 1152ms
+
+NoMethodError (undefined method `name' for #<Accessory:0x007f8a45dda848>):
+  app/controllers/accessories_controller.rb:30:in `block in create'
+  app/controllers/accessories_controller.rb:29:in `create'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.9ms)
+  [1m[36m (100.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (35.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCheckouts (20140707221439)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (39.0ms)[0m  [1mCREATE TABLE "checkouts" ("id" serial primary key, "user_id" integer, "bike_id" integer, "returned_at" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_checkouts_on_user_id" ON "checkouts"  ("user_id")
+  [1m[36m (1.4ms)[0m  [1mCREATE  INDEX  "index_checkouts_on_bike_id" ON "checkouts"  ("bike_id")[0m
+  [1m[35mSQL (13.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140707221439"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBikes (20140707221635)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (6.9ms)[0m  [1mCREATE TABLE "bikes" ("id" serial primary key, "lock_password" character varying(255), "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140707221635"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAccessories (20140707222027)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (5.3ms)[0m  [1mCREATE TABLE "accessories" ("id" serial primary key, "name" character varying(255), "not_missing" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140707222027"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddBikeIdToAccessories (20140707222241)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (19.6ms)[0m  [1mALTER TABLE "accessories" ADD COLUMN "bike_id" integer[0m
+  [1m[35m (34.0ms)[0m  CREATE  INDEX  "index_accessories_on_bike_id" ON "accessories"  ("bike_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140707222241"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Migrating to CreateUsers (20140708170000)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (33.6ms)[0m  CREATE TABLE "users" ("id" serial primary key, "uid" character varying(255), "provider" character varying(255), "email" character varying(255), "picture" character varying(255), "admin" boolean, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140708170000"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Migrating to AddAttachmentAvatarToUsers (20140708171529)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD COLUMN "avatar_file_name" character varying(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "avatar_content_type" character varying(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD COLUMN "avatar_file_size" integer
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "avatar_updated_at" timestamp[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140708171529"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttachmentImageToBikes (20140708172009)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "bikes" ADD COLUMN "image_file_name" character varying(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "bikes" ADD COLUMN "image_content_type" character varying(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "bikes" ADD COLUMN "image_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "bikes" ADD COLUMN "image_updated_at" timestamp
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140708172009"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Migrating to AddAttachmentImageToAccessories (20140708172016)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.4ms)[0m  ALTER TABLE "accessories" ADD COLUMN "image_file_name" character varying(255)
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "accessories" ADD COLUMN "image_content_type" character varying(255)[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "accessories" ADD COLUMN "image_file_size" integer
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "accessories" ADD COLUMN "image_updated_at" timestamp[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140708172016"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveTypeFromAccessories (20140709205845)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140709205845"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/accessories" for 127.0.0.1 at 2014-07-09 17:03:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AccessoriesController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/login
+Filter chain halted as :redirect_to_login rendered or redirected
+Completed 302 Found in 107ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-07-09 17:03:07 -0400
+Processing by SessionsController#login as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered sessions/login.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 536ms (Views: 533.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:08 -0400
+
+
+Started GET "/auth/cobot" for 127.0.0.1 at 2014-07-09 17:03:10 -0400
+
+
+Started GET "/auth/cobot/callback?code=e70898fb1fc314477bd120feed8f8bd8&state=83ad751a39852755a886a8d9c8b1fef9248c959f66f53585" for 127.0.0.1 at 2014-07-09 17:03:12 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"e70898fb1fc314477bd120feed8f8bd8", "state"=>"83ad751a39852755a886a8d9c8b1fef9248c959f66f53585"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (14.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."provider" = 'cobot' AND "users"."uid" = 'c5787a5c285ad5fc4d0ae7b6d6e14be0' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.0ms)[0m  INSERT INTO "users" ("created_at", "email", "picture", "provider", "uid", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-07-09 21:03:19.037880"], ["email", "walter@walterlatimer.com"], ["picture", "https://secure.gravatar.com/avatar/7004663fab7e54d9aeedc6476185aefb?default=mm&size=120"], ["provider", "cobot"], ["uid", "c5787a5c285ad5fc4d0ae7b6d6e14be0"], ["updated_at", "2014-07-09 21:03:19.037880"]]
+  [1m[36m (59.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 143ms (ActiveRecord: 83.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+Processing by BikesController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (18.7ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mBike Load (28.7ms)[0m  [1mSELECT "bikes".* FROM "bikes"[0m
+  Rendered bikes/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 355ms (Views: 66.6ms | ActiveRecord: 51.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:19 -0400
+
+
+Started GET "/bikes" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+Processing by BikesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mBike Load (0.4ms)[0m  [1mSELECT "bikes".* FROM "bikes"[0m
+  Rendered bikes/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 18.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:24 -0400
+
+
+Started GET "/bikes/new" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+Processing by BikesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered bikes/_form.html.erb (219.1ms)
+  Rendered bikes/new.html.erb within layouts/application (289.4ms)
+Completed 200 OK in 324ms (Views: 318.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:29 -0400
+
+
+Started GET "/accessories/new" for 127.0.0.1 at 2014-07-09 17:03:38 -0400
+Processing by AccessoriesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered accessories/_form.html.erb (43.0ms)
+  Rendered accessories/new.html.erb within layouts/application (77.9ms)
+Completed 500 Internal Server Error in 143ms
+
+ActionView::Template::Error (undefined method `type' for #<Accessory:0x007fc5702b8e40>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :type %><br>
+    16:     <%= f.text_field :type %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :not_missing %><br>
+  app/views/accessories/_form.html.erb:16:in `block in _app_views_accessories__form_html_erb__2424389444283812324_70242983547780'
+  app/views/accessories/_form.html.erb:1:in `_app_views_accessories__form_html_erb__2424389444283812324_70242983547780'
+  app/views/accessories/new.html.erb:3:in `_app_views_accessories_new_html_erb___4071286447692339025_70242983579420'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.2ms)
+
+
+Started GET "/accessories/new" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+Processing by AccessoriesController#new as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered accessories/_form.html.erb (52.7ms)
+  Rendered accessories/new.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 79ms (Views: 75.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:03:59 -0400
+
+
+Started POST "/accessories" for 127.0.0.1 at 2014-07-09 17:04:10 -0400
+Processing by AccessoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "accessory"=>{"name"=>"Helmut", "not_missing"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fc56ec83440 @tempfile=#<Tempfile:/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/RackMultipart20140709-50002-yb9ml5>, @original_filename="Bike_helmet2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"accessory[image]\"; filename=\"Bike_helmet2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Accessory"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-5m9sr1.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt.jpg[0]'
+Command :: convert '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt.jpg[0]' -auto-orient -resize "x350" -crop "350x350+71+0" +repage '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt20140709-50002-pxdrc1'
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt20140709-50002-pxdrc1'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt.jpg[0]'
+Command :: convert '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt.jpg[0]' -auto-orient -resize "x100" -crop "100x100+20+0" +repage '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt20140709-50002-i08xuq'
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-mvoutt20140709-50002-i08xuq'
+  [1m[35m (0.3ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/df49e06d56e6c04576b869818e7a0dca20140709-50002-m5p5ne.jpg'
+  [1m[36mSQL (24.6ms)[0m  [1mINSERT INTO "accessories" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "not_missing", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", "2014-07-09 21:04:12.096825"], ["image_content_type", "image/jpeg"], ["image_file_name", "Bike_helmet2.jpg"], ["image_file_size", 32190], ["image_updated_at", "2014-07-09 21:04:10.794882"], ["name", "Helmut"], ["not_missing", "t"], ["updated_at", "2014-07-09 21:04:12.096825"]]
+  [1m[35m (21.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/accessories/1
+Completed 302 Found in 1524ms (ActiveRecord: 47.1ms)
+
+
+Started GET "/accessories/1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+Processing by AccessoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.7ms)[0m  SELECT  "accessories".* FROM "accessories"  WHERE "accessories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered accessories/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 106ms (Views: 101.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:12 -0400
+
+
+Started GET "/accessories/1/show" for 127.0.0.1 at 2014-07-09 17:04:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/accessories/1/show"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.3ms)
+
+
+Started GET "/accessories" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+Processing by AccessoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.5ms)[0m  SELECT "accessories".* FROM "accessories"
+  Rendered accessories/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 64ms (Views: 59.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:04:40 -0400
+
+
+Started GET "/accessories/1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+Processing by AccessoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.5ms)[0m  SELECT  "accessories".* FROM "accessories"  WHERE "accessories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered accessories/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 151ms (Views: 147.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:08:57 -0400
+
+
+Started GET "/accessories/2" for 127.0.0.1 at 2014-07-09 17:09:07 -0400
+Processing by AccessoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.4ms)[0m  SELECT  "accessories".* FROM "accessories"  WHERE "accessories"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Accessory with 'id'=2):
+  app/controllers/accessories_controller.rb:67:in `set_accessory'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.9ms)
+
+
+Started GET "/accessories/1" for 127.0.0.1 at 2014-07-09 17:09:10 -0400
+Processing by AccessoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.4ms)[0m  SELECT  "accessories".* FROM "accessories"  WHERE "accessories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered accessories/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:10 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:11 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:09:11 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:11 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:11 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:11 -0400
+
+
+Started GET "/bike/1" for 127.0.0.1 at 2014-07-09 17:09:19 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bike/1"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.1ms)
+
+
+Started GET "/bike/new" for 127.0.0.1 at 2014-07-09 17:09:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bike/new"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.5ms)
+
+
+Started GET "/bikes/new" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+Processing by BikesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered bikes/_form.html.erb (5.8ms)
+  Rendered bikes/new.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 56ms (Views: 52.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:27 -0400
+
+
+Started POST "/bikes" for 127.0.0.1 at 2014-07-09 17:09:50 -0400
+Processing by BikesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "bike"=>{"lock_password"=>"[FILTERED]", "name"=>"Bike 1 ", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fc5704d0bb0 @tempfile=#<Tempfile:/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/RackMultipart20140709-50002-1k7y1vg>, @original_filename="Bike 1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"bike[image]\"; filename=\"Bike 1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Bike"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/ced4e9e351c33c715426ab86377d6ccb20140709-50002-iopr7h.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm.jpg[0]'
+Command :: convert '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm.jpg[0]' -auto-orient -resize "500x" -crop "500x300+0+100" +repage '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm20140709-50002-wi0paj'
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm20140709-50002-wi0paj'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm.jpg[0]'
+Command :: convert '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm.jpg[0]' -auto-orient -resize "100x" -crop "100x100+0+0" +repage '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm20140709-50002-ybdkmb'
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/e7a782f2f0e7c77c2b0ea6e60e12377220140709-50002-16ebelm20140709-50002-ybdkmb'
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/pd/d6_8vx8s05gdlwx0yx7c4cx00000gn/T/ced4e9e351c33c715426ab86377d6ccb20140709-50002-y4l3f9.jpg'
+  [1m[35mSQL (16.8ms)[0m  INSERT INTO "bikes" ("created_at", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "lock_password", "name", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", "2014-07-09 21:09:50.930628"], ["image_content_type", "image/jpeg"], ["image_file_name", "Bike_1.jpg"], ["image_file_size", 43681], ["image_updated_at", "2014-07-09 21:09:50.066024"], ["lock_password", "12345"], ["name", "Bike 1 "], ["updated_at", "2014-07-09 21:09:50.930628"]]
+  [1m[36m (39.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/bikes/1
+Completed 302 Found in 1000ms (ActiveRecord: 57.2ms)
+
+
+Started GET "/bikes/1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+Processing by BikesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBike Load (0.5ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered bikes/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 107ms (Views: 102.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:51 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+Processing by BikesController#index as HTML
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mBike Load (0.4ms)[0m  [1mSELECT "bikes".* FROM "bikes"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."bike_id" = $1 AND "checkouts"."returned_at" IS NULL  [["bike_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."bike_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["bike_id", 1]]
+  Rendered bikes/index.html.erb within layouts/application (472.7ms)
+Completed 200 OK in 509ms (Views: 500.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:09:56 -0400
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "checkout"=>{"user_id"=>"1", "bike_id"=>"1"}, "commit"=>"Check Bike 1  out"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (14.6ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."user_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1[0m
+  [1m[35mBike Load (0.5ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."bike_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (15.9ms)[0m  INSERT INTO "checkouts" ("bike_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["bike_id", 1], ["created_at", "2014-07-09 21:10:00.547585"], ["updated_at", "2014-07-09 21:10:00.547585"], ["user_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/checkouts/1
+Completed 302 Found in 169ms (ActiveRecord: 32.9ms)
+
+
+Started GET "/checkouts/1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+Processing by CheckoutsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Load (0.6ms)[0m  [1mSELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBike Load (0.8ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.4ms)[0m  SELECT "accessories".* FROM "accessories"  WHERE "accessories"."bike_id" = $1  [["bike_id", 1]]
+  Rendered checkouts/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:10:00 -0400
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2014-07-09 17:11:35 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "checkout"=>{"user_id"=>"1", "bike_id"=>"1"}, "commit"=>"Check Bike 1  out"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Exists (14.9ms)[0m  SELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."user_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1
+  [1m[36mBike Load (0.5ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Exists (0.6ms)[0m  SELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."bike_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered checkouts/_form.html.erb (88.2ms)
+  Rendered checkouts/new.html.erb within layouts/application (102.4ms)
+Completed 200 OK in 251ms (Views: 222.0ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:11:36 -0400
+
+
+Started GET "/bikes" for 127.0.0.1 at 2014-07-09 17:11:59 -0400
+Processing by BikesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (18.9ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mCheckout Load (0.6ms)[0m  SELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."returned_at" IS NULL AND "checkouts"."user_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mBike Load (0.6ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered bikes/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 60ms (Views: 34.7ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:12:00 -0400
+
+
+Started PATCH "/checkouts/1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+Processing by CheckoutsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "checkout"=>{"returned_at"=>"2014-07-09 17:12:00 -0400"}, "commit"=>"Return Bike 1 ", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Load (0.5ms)[0m  SELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (176.6ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."user_id" = 1 AND "checkouts"."id" != 1 AND "checkouts"."returned_at" = '2014-07-09 21:12:00.000000') LIMIT 1[0m
+  [1m[35mBike Load (0.5ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."bike_id" = 1 AND "checkouts"."id" != 1 AND "checkouts"."returned_at" = '2014-07-09 21:12:00.000000') LIMIT 1[0m
+  [1m[35mSQL (4.4ms)[0m  UPDATE "checkouts" SET "returned_at" = $1, "updated_at" = $2 WHERE "checkouts"."id" = 1  [["returned_at", "2014-07-09 21:12:00.000000"], ["updated_at", "2014-07-09 21:16:20.297991"]]
+  [1m[36m (32.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/checkouts/1
+Completed 302 Found in 285ms (ActiveRecord: 215.9ms)
+
+
+Started GET "/checkouts/1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+Processing by CheckoutsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Load (0.4ms)[0m  [1mSELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBike Load (0.3ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.5ms)[0m  SELECT "accessories".* FROM "accessories"  WHERE "accessories"."bike_id" = $1  [["bike_id", 1]]
+  Rendered checkouts/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 199ms (Views: 174.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:16:20 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+Processing by BikesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mBike Load (0.4ms)[0m  SELECT "bikes".* FROM "bikes"
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."bike_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["bike_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."bike_id" = $1 AND "checkouts"."returned_at" IS NULL  [["bike_id", 1]]
+  Rendered bikes/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 67ms (Views: 59.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:17:17 -0400
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "checkout"=>{"user_id"=>"1", "bike_id"=>"1"}, "commit"=>"Check Bike 1  out"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Exists (0.6ms)[0m  SELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."user_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1
+  [1m[36mBike Load (0.3ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Exists (0.5ms)[0m  SELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."bike_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1
+  [1m[36mSQL (35.3ms)[0m  [1mINSERT INTO "checkouts" ("bike_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["bike_id", 1], ["created_at", "2014-07-09 21:18:01.121129"], ["updated_at", "2014-07-09 21:18:01.121129"], ["user_id", 1]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/checkouts/2
+Completed 302 Found in 53ms (ActiveRecord: 41.2ms)
+
+
+Started GET "/checkouts/2" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+Processing by CheckoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Load (0.6ms)[0m  SELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBike Load (0.3ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAccessory Load (0.4ms)[0m  [1mSELECT "accessories".* FROM "accessories"  WHERE "accessories"."bike_id" = $1[0m  [["bike_id", 1]]
+  Rendered checkouts/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 27ms (Views: 21.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 17:18:51 -0400
+Processing by BikesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mCheckout Load (0.7ms)[0m  SELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."returned_at" IS NULL AND "checkouts"."user_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mBike Load (0.4ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered bikes/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 32ms (Views: 23.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:52 -0400
+
+
+Started PATCH "/checkouts/2" for 127.0.0.1 at 2014-07-09 17:18:53 -0400
+Processing by CheckoutsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "checkout"=>{"returned_at"=>"2014-07-09 17:18:52 -0400"}, "commit"=>"Return Bike 1 ", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Load (0.6ms)[0m  SELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."user_id" = 1 AND "checkouts"."id" != 2 AND "checkouts"."returned_at" = '2014-07-09 21:18:52.000000') LIMIT 1[0m
+  [1m[35mBike Load (0.2ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."bike_id" = 1 AND "checkouts"."id" != 2 AND "checkouts"."returned_at" = '2014-07-09 21:18:52.000000') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "checkouts" SET "returned_at" = $1, "updated_at" = $2 WHERE "checkouts"."id" = 2  [["returned_at", "2014-07-09 21:18:52.000000"], ["updated_at", "2014-07-09 21:18:54.014510"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/checkouts/2
+Completed 302 Found in 15ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/checkouts/2" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+Processing by CheckoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Load (0.4ms)[0m  [1mSELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBike Load (0.3ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.4ms)[0m  SELECT "accessories".* FROM "accessories"  WHERE "accessories"."bike_id" = $1  [["bike_id", 1]]
+  Rendered checkouts/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:18:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 17:18:55 -0400
+Processing by BikesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mBike Load (0.6ms)[0m  SELECT "bikes".* FROM "bikes"
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."bike_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["bike_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."bike_id" = $1 AND "checkouts"."returned_at" IS NULL  [["bike_id", 1]]
+  Rendered bikes/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 43ms (Views: 34.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:55 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:18:55 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:55 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:18:56 -0400
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "checkout"=>{"user_id"=>"1", "bike_id"=>"1"}, "commit"=>"Check Bike 1  out"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.7ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Exists (0.8ms)[0m  SELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."user_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1
+  [1m[36mBike Load (0.4ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Exists (0.8ms)[0m  SELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."bike_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "checkouts" ("bike_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["bike_id", 1], ["created_at", "2014-07-09 21:19:00.475852"], ["updated_at", "2014-07-09 21:19:00.475852"], ["user_id", 1]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/checkouts/3
+Completed 302 Found in 22ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/checkouts/3" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+Processing by CheckoutsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Load (0.3ms)[0m  SELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBike Load (0.3ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAccessory Load (0.4ms)[0m  [1mSELECT "accessories".* FROM "accessories"  WHERE "accessories"."bike_id" = $1[0m  [["bike_id", 1]]
+  Rendered checkouts/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:00 -0400
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "checkout"=>{"user_id"=>"1", "bike_id"=>"1"}, "commit"=>"Check Bike 1  out"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."user_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1[0m
+  [1m[35mBike Load (0.3ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."bike_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered checkouts/_form.html.erb (11.7ms)
+  Rendered checkouts/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 75ms (Views: 62.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+Processing by BikesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mCheckout Load (0.7ms)[0m  [1mSELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."returned_at" IS NULL AND "checkouts"."user_id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mBike Load (0.6ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered bikes/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 35ms (Views: 27.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:19:33 -0400
+
+
+Started GET "/accessories" for 127.0.0.1 at 2014-07-09 17:22:47 -0400
+Processing by AccessoriesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAccessory Load (0.4ms)[0m  [1mSELECT "accessories".* FROM "accessories"[0m
+  Rendered accessories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:47 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/accessories/new" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+Processing by AccessoriesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered accessories/_form.html.erb (4.6ms)
+  Rendered accessories/new.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:22:48 -0400
+
+
+Started GET "/bikes" for 127.0.0.1 at 2014-07-09 17:37:31 -0400
+Processing by BikesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mCheckout Load (0.5ms)[0m  [1mSELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."returned_at" IS NULL AND "checkouts"."user_id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mBike Load (0.4ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered bikes/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 409ms (Views: 114.9ms | ActiveRecord: 243.7ms)
+
+
+Started GET "/bikes" for 127.0.0.1 at 2014-07-09 17:37:31 -0400
+Processing by BikesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mCheckout Load (0.5ms)[0m  SELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."returned_at" IS NULL AND "checkouts"."user_id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mBike Load (0.3ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered bikes/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 28ms (Views: 21.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:32 -0400
+
+
+Started PATCH "/checkouts/3" for 127.0.0.1 at 2014-07-09 17:37:34 -0400
+Processing by CheckoutsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "checkout"=>{"returned_at"=>"2014-07-09 17:37:31 -0400"}, "commit"=>"Return Bike 1 ", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Load (0.3ms)[0m  SELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."user_id" = 1 AND "checkouts"."id" != 3 AND "checkouts"."returned_at" = '2014-07-09 21:37:31.000000') LIMIT 1[0m
+  [1m[35mBike Load (0.3ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."bike_id" = 1 AND "checkouts"."id" != 3 AND "checkouts"."returned_at" = '2014-07-09 21:37:31.000000') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "checkouts" SET "returned_at" = $1, "updated_at" = $2 WHERE "checkouts"."id" = 3  [["returned_at", "2014-07-09 21:37:31.000000"], ["updated_at", "2014-07-09 21:37:34.808288"]]
+  [1m[36m (36.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/checkouts/3
+Completed 302 Found in 58ms (ActiveRecord: 39.3ms)
+
+
+Started GET "/checkouts/3" for 127.0.0.1 at 2014-07-09 17:37:34 -0400
+Processing by CheckoutsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCheckout Load (0.3ms)[0m  [1mSELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mBike Load (0.3ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAccessory Load (0.4ms)[0m  SELECT "accessories".* FROM "accessories"  WHERE "accessories"."bike_id" = $1  [["bike_id", 1]]
+  Rendered checkouts/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:34 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:35 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:35 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:35 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:35 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:37:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:35 -0400
+
+
+Started GET "/bikes" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+Processing by BikesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."user_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["user_id", 1]]
+  [1m[35mBike Load (0.4ms)[0m  SELECT "bikes".* FROM "bikes"
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."bike_id" = $1 AND "checkouts"."returned_at" IS NULL[0m  [["bike_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "checkouts"  WHERE "checkouts"."bike_id" = $1 AND "checkouts"."returned_at" IS NULL  [["bike_id", 1]]
+  Rendered bikes/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 31ms (Views: 25.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:38 -0400
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Quc2NeqybTnQ32gRmpvV/BjMEMP2vQtkdefmpds/sd0=", "checkout"=>{"user_id"=>"1", "bike_id"=>"1"}, "commit"=>"Check Bike 1  out"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Exists (0.5ms)[0m  SELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."user_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1
+  [1m[36mBike Load (0.2ms)[0m  [1mSELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Exists (0.5ms)[0m  SELECT  1 AS one FROM "checkouts"  WHERE ("checkouts"."bike_id" = 1 AND "checkouts"."returned_at" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "checkouts" ("bike_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["bike_id", 1], ["created_at", "2014-07-09 21:37:43.256693"], ["updated_at", "2014-07-09 21:37:43.256693"], ["user_id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/checkouts/4
+Completed 302 Found in 13ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/checkouts/4" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+Processing by CheckoutsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCheckout Load (0.3ms)[0m  SELECT  "checkouts".* FROM "checkouts"  WHERE "checkouts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mBike Load (0.3ms)[0m  SELECT  "bikes".* FROM "bikes"  WHERE "bikes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAccessory Load (0.3ms)[0m  [1mSELECT "accessories".* FROM "accessories"  WHERE "accessories"."bike_id" = $1[0m  [["bike_id", 1]]
+  Rendered checkouts/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/assets/accessories.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/assets/checkouts.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 17:37:43 -0400
+
+
+Started GET "/bikes/1/accessories/new" for 127.0.0.1 at 2014-07-09 17:37:52 -0400
+Processing by AccessoriesController#new as HTML
+  Parameters: {"bike_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered accessories/_form.html.erb (30.8ms)
+  Rendered accessories/new.html.erb within layouts/application (63.1ms)
+Completed 500 Internal Server Error in 83ms
+
+ActionView::Template::Error (undefined method `accessories_path' for #<#<Class:0x007fc5703d18e0>:0x007fc5703d0a80>):
+    1: <%= form_for(@accessory) do |f| %>
+    2:   <% if @accessory.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@accessory.errors.count, "error") %> prohibited this accessory from being saved:</h2>
+  app/views/accessories/_form.html.erb:1:in `_app_views_accessories__form_html_erb__2424389444283812324_70242984136920'
+  app/views/accessories/new.html.erb:3:in `_app_views_accessories_new_html_erb___4071286447692339025_70242983579420'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.6ms)
+>>>>>>> 04e864da68ec1da0e633090cd3e69386d3755af2
