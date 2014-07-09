@@ -13,16 +13,24 @@ $bg: #fff;
 // General styles
 //
 
+html {
+	border-top: 5px solid $accent;
+	border-bottom: 5px solid $accent;
+	min-height: 100%;
+}
+
 body {
  	color: $gray;
  	font: 18px "Quicksand", sans-serif;
  	font-weight: 400;
- 	width: 500px;
+ 	max-width: 500px;
  	margin: 0 auto;
+ 	padding: 10px;
 }
 
-header {
-	padding-top: 10px;
+nav {
+	background-color: lighten($accent, 45);
+	padding: 5px 0;
 	&:before, &:after {
 		content: " ";
 		display: table;
@@ -30,14 +38,31 @@ header {
 	&:after {
 	    clear: both;
 	}
-}
-
-main {
-	padding-top: 10px;
+	span {
+		font-size: 0.75rem;
+		position: absolute;
+		margin-top: 13px;
+		margin-left: 5px;
+	}
 }
 
 img {
 	max-width: 100%;
+}
+
+h1, h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+a {
+	font-weight: 700;
+	text-decoration: none;
+	&:link, &:visited, &:active {
+		color: $accent;
+	}
+	&:hover {
+		color: $gray;
+	}
 }
 
 //
@@ -45,16 +70,13 @@ img {
 //
 
 .flash {
-	padding-top: 10px;
-	p {
-		width: 100%;
-		border-radius: 2px;
-		font-size: .75rem;
-		text-align: center;
-		background-color: $accent;
-		color: $bg;
-		padding: 5px;
-	}
+	width: 100%;
+	border-radius: 2px;
+	font-size: .75rem;
+	text-align: center;
+	background-color: $accent;
+	color: $bg;
+	padding: 5px;
 }
 
 //
@@ -70,11 +92,13 @@ img {
 
 @mixin buttonlike {
 	background-color: $bg;
-	border: 2px solid $accent;
+	border: 1px solid $accent;
 	border-radius: 2px;
 	color: $accent;
 	font-size: .75rem;
+	font-weight: 400;
 	padding: 10px;
+	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	@include transition(all 0.1s linear);
@@ -87,9 +111,15 @@ img {
 .button {
 	@include buttonlike;
 }
+
+.full {
+	display: block;
+}
+
 .logout {
 	float: right;
-	margin-top: 7px;
+	margin-top: 3px;
+	margin-right: 10px;
 }
 
 input[type=submit] {
@@ -98,30 +128,57 @@ input[type=submit] {
 	width: 100%;
 }
 
-.entry {
-	padding-top: 10px;
-}
+//
+// Bikes
+//
 
-.entry-collection {
-	margin: 20%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-
-.bike-box {
-	display: inline-block;
-	padding: 1% 2%;
-	margin-bottom: 1%;
-}
-
-.selection {
-	cursor: pointer;
+.bike {
 	@include transition(all 0.1s linear);
+	padding: 0 20px 20px 20px;
+	border: 20px solid transparent;
+	border-style: solid;
+	border-width: 0 20px 0 20px;
+	border-color: transparent;
+	img {
+		padding: 20px;
+		@include transition(all 0.1s linear);
+	}
 	&:hover {
-		border-style: solid;
-		border-width: 0px 35px;
-		border-color: $accent;
-		box-shadow: 5px 5px 5px 2px #888;
+		// border-color: $accent;
+		img {
+			@include transform(scale(1.1,1.1));
+		}
+	}
+}
+.not-available {
+	opacity: .3;
+	&:hover img {
+		@include transform();
+	}
+}
+
+.disabled-button {
+	@include buttonlike;
+	background-color: $gray;
+	color: $bg;
+	border-color: $bg;
+	&:hover {
+		background-color: $gray;
+	}
+}
+
+
+//
+// Checkouts
+//
+
+.checkout {
+	font-size: 0.75rem;
+	padding: 20px 0;
+	img {
+		width: 50px;
+		height: 50px;
+		// border-radius: 50%;
 	}
 }
 
@@ -130,9 +187,9 @@ input[type=submit] {
 //
 
 .avatar {
-	width: 50px;
-	height: 50px;
-	margin: 0;
+	width: 40px;
+	height: 40px;
+	margin: 0 0 0 10px;
 	display: inline-block;
 	float: left;
 	img {
@@ -141,4 +198,16 @@ input[type=submit] {
 		border-radius: 50%;
 	}
 }
+
+//
+// Selection
+//
+
+::selection {
+	background-color: $accent;
+	color: $bg;
+}
+
+
+
 

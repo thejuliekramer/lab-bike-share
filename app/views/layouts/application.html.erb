@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LabBikeShare</title>
+  <title>LAB Bike Share</title>
   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -9,19 +9,23 @@
 </head>
 <body>
 
-
-<% if flash[:notice] %>
-	<div class="flash" id="notice"><p><%= flash[:notice] %></p></div>
-<% elsif flash[:success] %>
-	<div class="flash" id="success"><p><%= flash[:success] %></p></div>
-<% end %> 
-
 <header>
-	<% if @current_user %>
-		<%= content_tag :figure, image_tag(@current_user.picture), class: "avatar" %>
-		<%= link_to "Logout", "/logout", class: "button logout" %>
-	<% end %>
+	<h1><%= link_to image_tag("http://i.imgur.com/Uypgzd6.png"), root_path %><br>Bike Share</h1>
 </header>
+
+<% # if flash[:notice] %>
+	<!-- <div class="flash" id="notice"><%= flash[:notice] %></div> -->
+<% # elsif flash[:success] %>
+	<!-- <div class="flash" id="success"><%= flash[:success] %></div> -->
+<% # end %> 
+
+<% if @current_user %>
+	<nav>
+		<%= content_tag :figure, image_tag(@current_user.picture), class: "avatar" %>
+		<span><%= @current_user.email %></span>
+		<%= link_to "Logout", "/logout", class: "button logout" %>
+	</nav>
+<% end %>
 
 <main>
 	<%= yield %>

@@ -15,4 +15,8 @@ class User < ActiveRecord::Base
 	def has_bike?
 		self.checkouts.where(returned_at: nil).any?
 	end
+
+	def current_checkout
+		Checkout.find_by(returned_at: nil, user_id: self.id)
+	end
 end
