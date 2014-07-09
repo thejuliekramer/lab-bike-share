@@ -13,15 +13,20 @@ $bg: #fff;
 // General styles
 //
 
+html {
+	border-top: 10px solid $accent;
+}
+
 body {
  	color: $gray;
  	font: 18px "Quicksand", sans-serif;
  	font-weight: 400;
  	max-width: 500px;
  	margin: 0 auto;
+ 	padding: 10px;
 }
 
-header {
+nav {
 	padding-top: 10px;
 	&:before, &:after {
 		content: " ";
@@ -32,15 +37,11 @@ header {
 	}
 }
 
-main {
-	padding: 10px 0;
-}
-
 img {
 	max-width: 100%;
 }
 
-h2 {
+h1, h2 {
 	text-align: center;
 }
 
@@ -49,16 +50,13 @@ h2 {
 //
 
 .flash {
-	padding-top: 10px;
-	p {
-		width: 100%;
-		border-radius: 2px;
-		font-size: .75rem;
-		text-align: center;
-		background-color: $accent;
-		color: $bg;
-		padding: 5px;
-	}
+	width: 100%;
+	border-radius: 2px;
+	font-size: .75rem;
+	text-align: center;
+	background-color: $accent;
+	color: $bg;
+	padding: 5px;
 }
 
 //
@@ -79,6 +77,7 @@ h2 {
 	color: $accent;
 	font-size: .75rem;
 	padding: 10px;
+	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	@include transition(all 0.1s linear);
@@ -95,6 +94,7 @@ h2 {
 .logout {
 	float: right;
 	margin-top: 7px;
+	margin-right: 10px;
 }
 
 input[type=submit] {
@@ -115,7 +115,7 @@ input[type=submit] {
 	border-width: 0 20px 0 20px;
 	border-color: transparent;
 	img {
-		padding: 10px;
+		padding: 20px;
 		@include transition(all 0.1s linear);
 	}
 	&:hover {
@@ -130,8 +130,15 @@ input[type=submit] {
 	&:hover img {
 		@include transform();
 	}
-	p {
-		text-align: center;
+}
+
+.disabled-button {
+	@include buttonlike;
+	background-color: $gray;
+	color: $bg;
+	border-color: $bg;
+	&:hover {
+		background-color: $gray;
 	}
 }
 
@@ -142,7 +149,7 @@ input[type=submit] {
 .avatar {
 	width: 50px;
 	height: 50px;
-	margin: 0;
+	margin: 0 0 0 10px;
 	display: inline-block;
 	float: left;
 	img {
