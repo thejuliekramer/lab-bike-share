@@ -10,21 +10,22 @@
 <body>
 
 <header>
-	<h1><%= link_to image_tag("http://thelabmiami.com/wp-content/uploads/2013/09/thelabmiami-logo.png"), root_path %></h1>
+	<h1><%= link_to image_tag("http://i.imgur.com/Uypgzd6.png"), root_path %><br>Bike Share</h1>
 </header>
 
-<% if flash[:notice] %>
-	<div class="flash" id="notice"><%= flash[:notice] %></div>
-<% elsif flash[:success] %>
-	<div class="flash" id="success"><%= flash[:success] %></div>
-<% end %> 
+<% # if flash[:notice] %>
+	<!-- <div class="flash" id="notice"><%= flash[:notice] %></div> -->
+<% # elsif flash[:success] %>
+	<!-- <div class="flash" id="success"><%= flash[:success] %></div> -->
+<% # end %> 
 
-<nav>
-	<% if @current_user %>
+<% if @current_user %>
+	<nav>
 		<%= content_tag :figure, image_tag(@current_user.picture), class: "avatar" %>
+		<span><%= @current_user.email %></span>
 		<%= link_to "Logout", "/logout", class: "button logout" %>
-	<% end %>
-</nav>
+	</nav>
+<% end %>
 
 <main>
 	<%= yield %>
