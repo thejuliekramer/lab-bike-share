@@ -1,4 +1,4 @@
-sRails.application.routes.draw do
+Rails.application.routes.draw do
 
   root 'bikes#index'
 
@@ -8,9 +8,8 @@ sRails.application.routes.draw do
   get "auth/cobot/callback", to: "sessions#create"
   get "logout", to: "sessions#logout" 
 
-  resources :bikes do
-    resources :accessories
-  end
+  resources :accessories
+  resources :bikes
   resources :checkouts
   resources :users
 
