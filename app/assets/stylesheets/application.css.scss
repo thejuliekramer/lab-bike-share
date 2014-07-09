@@ -1,18 +1,67 @@
 @import 'bourbon';
 @import 'neat';
 
+//
+// Variables
+//
+
+$accent: #20bed2;
+$gray: #56646F;
+$bg: #fff;
+
+//
+// General styles
+//
+
 body {
+ 	color: $gray;
  	font: 18px "Quicksand", sans-serif;
- 	color: #56646F;
  	font-weight: 400;
  }
 
+ main {
+	max-width: 500px;
+	margin: 0 auto;
+}
+img {
+	max-width: 100%;
+}
+
+//
+// Links and Forms
+//
 
 .input-box {
 	width: 200px;
 	padding: 0.5%;
-	padding-right: 0%;
-	background-color: #FFF;
+	padding-right: 0;
+	background-color: $bg;
+}
+
+@mixin buttonlike {
+	background-color: $bg;
+	border: 2px solid $accent;
+	border-radius: 2px;
+	color: $accent;
+	font-size: .75rem;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	@include transition(all 0.1s linear);
+	&:hover {
+		background-color: $accent;
+		color: $bg;
+	}
+}
+
+.button {
+	@include buttonlike;
+}
+
+input[type=submit] {
+	@include buttonlike;
+	cursor: pointer;
+	width: 100%;
 }
 
 .entry {
@@ -25,52 +74,26 @@ body {
 	margin-bottom: 5%;
 }
 
-#login-btn {
-	position: relative;
-	text-align: right;
-	right: 10%;
-}
-
-.btn-default {
-	font-size: 14px;
-	background-color: #FFF;
-	padding: 10px;
-	text-decoration: none;
-	border: 2px solid;
-	border-color: #20bed2;
-	color: #20bed2;
-	text-transform: uppercase;
-	border-radius: 2px;
-	cursor: pointer;
-	webkit-transition: all 0.1s linear;
-	moz-transition: all 0.1s linear;
-	o-transition: all 0.1s linear;
-	transition: all 0.1s linear;
-	&:hover {
-		background-color: #20bed2;
-		color: #FFF;
-	}
-}
-
 .bike-box {
 	display: inline-block;
 	padding: 1% 2%;
 	margin-bottom: 1%;
 }
+
 .selection {
 	cursor: pointer;
-	webkit-transition: all 0.1s linear;
-	moz-transition: all 0.1s linear;
-	o-transition: all 0.1s linear;
-	transition: all 0.1s linear;
+	@include transition(all 0.1s linear);
+	&:hover {
+		border-style: solid;
+		border-width: 0px 35px;
+		border-color: $accent;
+		box-shadow: 5px 5px 5px 2px #888;
+	}
 }
-.selection:hover {
-	border-style: solid;
-	border-width: 0px 35px;
-	border-color: #20bed2;
-	box-shadow: 5px 5px 5px 2px #888;
 
-}
+//
+// Avatars
+//
 
 .avatar {
 	width: 50px;
@@ -83,11 +106,5 @@ body {
 		border-radius: 50%;
 	}
 }
-
-main {
-	max-width: 500px;
-	margin: 0 auto;
-}
-
 
 

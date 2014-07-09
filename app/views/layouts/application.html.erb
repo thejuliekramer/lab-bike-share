@@ -10,15 +10,17 @@
 <body>
 
 <main>
+
+	<% if @current_user %>
+		<%= @current_user.email %> 
+		<%= content_tag :figure, image_tag(@current_user.picture), class: "avatar" %>
+		<%= link_to "Logout", "/logout", class: "button" %>
+	<% end %>
+
 	<% if flash[:notice] %>
 		<div id="notice"><%= flash[:notice] %></div>
 	<% elsif flash[:success] %>
 		<div id="success"><%= flash[:success] %></div>
-	<% end %>
-
-	<% if @current_user %>
-		<%= @current_user.email %>  <figure class="avatar"><%= image_tag @current_user.picture %></figure>  
-		<%= link_to "Logout", "/logout", class: "btn-default" %>
 	<% end %>
 
 	<%= yield %>
