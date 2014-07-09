@@ -5,7 +5,7 @@ class BikesController < ApplicationController
   # GET /bikes.json
   def index
     @bikes = Bike.all
-    @checkout = Checkout.new
+    @checkout = @current_user.has_bike? ? @current_user.current_checkout : Checkout.new
   end
 
   # GET /bikes/1

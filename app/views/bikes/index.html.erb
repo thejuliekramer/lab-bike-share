@@ -1,16 +1,27 @@
-<% @bikes.each do |bike| %>
-	<article class="bike<%= bike.is_checked_out? ? ' not-available' : '' %>">
-		<h2><%= bike.name %></h2>
-		<%= image_tag bike.image.url(:medium) %>
+<% if @current_user.has_bike? %>
+	You've already got <%= @checkout.bike.name %>.
 
-		<% if bike.is_checked_out? %>
-			<p class="disabled-button">This bike is currently checked out.</p>
-		<% else %>
-			<%= form_for(@checkout) do |f| %>
-				<%= f.hidden_field :user_id, value: @current_user.id %>
-				<%= f.hidden_field :bike_id, value: bike.id %>
-				<%= f.submit "Check #{bike.name} out" %>
+	<%= form_for(@checkout) do |f| %>
+		<%= f.hidden_field :returned_at, value: Time.now %>
+		<%= f.submit "Return" %>
+	<% end %>
+
+
+<% else %>
+	<% @bikes.each do |bike| %>
+		<article class="bike<%= bike.is_checked_out? ? ' not-available' : '' %>">
+			<h2><%= bike.name %></h2>
+			<%= image_tag bike.image.url(:medium) %>
+
+			<% if bike.is_checked_out? %>
+				<p class="disabled-button">This bike is currently checked out.</p>
+			<% else %>
+				<%= form_for(@checkout) do |f| %>
+					<%= f.hidden_field :user_id, value: @current_user.id %>
+					<%= f.hidden_field :bike_id, value: bike.id %>
+					<%= f.submit "Check #{bike.name} out" %>
+				<% end %>
 			<% end %>
-		<% end %>
-	</article>
+		</article>
+	<% end %>
 <% end %>
