@@ -11,13 +11,13 @@ class SessionsController < ApplicationController
 
 	def logout
 		session[:user_id] = nil
-		redirect_to root_path
+		redirect_to root_path, notice: "Logged out"
 	end
 
 	def create
 		auth = request.env["omniauth.auth"]
 		user = User.find_by(provider: auth["provider"], uid: auth["uid"]) || User.create_with_omniauth(auth)
 		session[:user_id] = user.id
-		redirect_to root_path
+		redirect_to root_path, notice: "Welcome back!  Logged in as #{user.email}."
 	end
 end

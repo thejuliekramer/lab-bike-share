@@ -9,20 +9,21 @@
 </head>
 <body>
 
-<main>
 
+<% if flash[:notice] %>
+	<div class="flash" id="notice"><p><%= flash[:notice] %></p></div>
+<% elsif flash[:success] %>
+	<div class="flash" id="success"><p><%= flash[:success] %></p></div>
+<% end %> 
+
+<header>
 	<% if @current_user %>
-		<%= @current_user.email %> 
 		<%= content_tag :figure, image_tag(@current_user.picture), class: "avatar" %>
-		<%= link_to "Logout", "/logout", class: "button" %>
+		<%= link_to "Logout", "/logout", class: "button logout" %>
 	<% end %>
+</header>
 
-	<% if flash[:notice] %>
-		<div id="notice"><%= flash[:notice] %></div>
-	<% elsif flash[:success] %>
-		<div id="success"><%= flash[:success] %></div>
-	<% end %>
-
+<main>
 	<%= yield %>
 </main>
 
