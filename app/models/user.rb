@@ -17,6 +17,6 @@ class User < ActiveRecord::Base
 	end
 
 	def current_checkout
-		Checkout.includes(:bike).find_by(returned_at: nil, user_id: self.id)
+		Checkout.find_by(returned_at: nil, user_id: self.id)
 	end
 end

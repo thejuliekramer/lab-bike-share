@@ -20,7 +20,7 @@
 
 $(document).ready(function(){
     $("body").css("display", "none");
-    $("body").fadeIn(200); 
+    $("body").fadeIn(300); 
     $('a').click(function(e){
         redirect = $(this).attr('href');
         e.preventDefault();

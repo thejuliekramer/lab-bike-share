@@ -1,5 +1,6 @@
 <% if @current_user.has_bike? %>
-	You've already got <%= @checkout.bike.name %>.
+	<p>You've already got <%= @checkout.bike.name %>.</p>
+	<p>The lock's password is <%= @checkout.bike.lock_password %>.</p>
 	<%= image_tag @checkout.bike.image.url(:medium) %>
 
 	<%= form_for(@checkout) do |f| %>
@@ -11,7 +12,6 @@
 <% else %>
 	<% @bikes.each do |bike| %>
 		<article class="bike<%= bike.is_checked_out? ? ' not-available' : '' %>">
-			<h2><%= bike.name %></h2>
 			<%= image_tag bike.image.url(:medium) %>
 
 			<% if bike.is_checked_out? %>

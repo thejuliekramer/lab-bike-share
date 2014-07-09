@@ -45,6 +45,16 @@ h1, h2 {
 	text-align: center;
 	text-transform: uppercase;
 }
+a {
+	font-weight: 700;
+	text-decoration: none;
+	&:link, &:visited, &:active {
+		color: $accent;
+	}
+	&:hover {
+		color: $gray;
+	}
+}
 
 //
 // Flashes
@@ -73,10 +83,11 @@ h1, h2 {
 
 @mixin buttonlike {
 	background-color: $bg;
-	border: 2px solid $accent;
+	border: 1px solid $accent;
 	border-radius: 2px;
 	color: $accent;
 	font-size: .75rem;
+	font-weight: 400;
 	padding: 10px;
 	text-align: center;
 	text-decoration: none;
@@ -90,6 +101,10 @@ h1, h2 {
 
 .button {
 	@include buttonlike;
+}
+
+.full {
+	display: block;
 }
 
 .logout {
@@ -143,6 +158,21 @@ input[type=submit] {
 	}
 }
 
+
+//
+// Checkouts
+//
+
+.checkout {
+	font-size: 0.75rem;
+	padding: 20px 0;
+	img {
+		width: 50px;
+		height: 50px;
+		// border-radius: 50%;
+	}
+}
+
 //
 // Avatars
 //
@@ -159,4 +189,16 @@ input[type=submit] {
 		border-radius: 50%;
 	}
 }
+
+//
+// Selection
+//
+
+::selection {
+	background-color: $accent;
+	color: $bg;
+}
+
+
+
 
