@@ -1,17 +1,13 @@
-Listing accessories
 
-<p>
-  <strong>Accessory:</strong>
-  <br>
-  <% @bike_accessories.each do | accessory| %>
-   <%= image_tag accessory.image.url(:thumb) %>
-   <br>
-   <%= accessory.name %>
-  <% end %>
-<%= paginate @bike_accessories %>
-</p>
+<% @bike_accessories.each do | accessory| %>
+	Does this bike have a <strong><%= accessory.name %>?</strong>
+<%= image_tag accessory.image.url(:medium) %>
 
+		<%= paginate @bike_accessories %>
 
+		<%= form_for(accessory) do |f| %>
+			<% f.hidden_field :not_missing, value: false %>
+			<%= f.submit "No" %>
+		<% end %>
+<% end %>
 
-
-  <!-- select if not_missing == true or false -->
