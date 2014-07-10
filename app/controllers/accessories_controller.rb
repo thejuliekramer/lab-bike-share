@@ -10,7 +10,7 @@ class AccessoriesController < ApplicationController
   # GET /accessories/1
   # GET /accessories/1.json
   def show
-  
+    bike_accessories
   end
 
   # GET /accessories/new
@@ -65,7 +65,11 @@ class AccessoriesController < ApplicationController
   private
     # @accessory is set to be accessories that point to the corresponding bike's id
     def set_accessory
-      @accessory = Accessory.find(params[:bike_id])
+      @accessory = Accessory.find(params[:id])
+    end
+
+    def bike_accessories
+      @bike_accessories = Accessory.where(bike_id: params[:bike_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

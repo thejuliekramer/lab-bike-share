@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :bikes do
     resources :accessories
   end
+  resources :accessories
   resources :checkouts
   resources :users
 

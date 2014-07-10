@@ -16,15 +16,15 @@
     <%= f.text_field :name %>
   </div>
 
-  <div class="field">
-    <%= f.label :not_missing %><br>
-    <%= f.check_box :not_missing %>
-  </div>
+<br>
+    <%= f.hidden_field :not_missing, value: true %>
+
    <div class="field">
     <%= f.label :image %><br>
     <%= f.file_field :image %>
   </div>
-  <%= f.hidden_field :bike_id%>
+  s
+  <%= f.hidden_field :bike_id, value: params[:bike_id] %>
   <div class="actions">
     <%= f.submit %>
   </div>

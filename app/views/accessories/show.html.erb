@@ -4,7 +4,14 @@
 
 <p>
   <strong>Accessory:</strong>
-  <%= @accessory.name %>
+  <br>
+  <% @bike_accessories.each do | accessory| %>
+   <%= image_tag accessory.image.url(:thumb) %>
+   <br>
+   <%= accessory.name %>
+ 
+  <% end %>
+
 </p>
 
 
