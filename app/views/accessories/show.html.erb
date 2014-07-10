@@ -1,14 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @checkout %>
-</p>
+
 
 <p>
-  <strong>Not missing:</strong>
-  <%= @accessory.not_missing %>
+  <strong>Accessory:</strong>
+  <%= @accessory.name %>
 </p>
 
-<%= link_to 'Yes', edit_accessory_path(@accessory) %> |
-<%= link_to 'No', accessories_path %>
+
+  <% @accessory.not_missing %>
+

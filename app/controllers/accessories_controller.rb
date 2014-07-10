@@ -10,6 +10,7 @@ class AccessoriesController < ApplicationController
   # GET /accessories/1
   # GET /accessories/1.json
   def show
+  
   end
 
   # GET /accessories/new
@@ -62,9 +63,9 @@ class AccessoriesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    # @accessory is set to be accessories that point to the corresponding bike's id
     def set_accessory
-      @accessory = Accessory.find(params[:id])
+      @accessory = Accessory.find(params[:bike_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
