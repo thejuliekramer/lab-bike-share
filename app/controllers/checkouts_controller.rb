@@ -38,7 +38,6 @@ class CheckoutsController < ApplicationController
   end
 
   # PATCH/PUT /checkouts/1
-  # PATCH/PUT /checkouts/1.json
   def update
     respond_to do |format|
       if @checkout.update(checkout_params)
@@ -52,7 +51,6 @@ class CheckoutsController < ApplicationController
   end
 
   # DELETE /checkouts/1
-  # DELETE /checkouts/1.json
   def destroy
     @checkout.destroy
     respond_to do |format|
