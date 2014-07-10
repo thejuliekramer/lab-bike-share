@@ -42,7 +42,7 @@ class CheckoutsController < ApplicationController
   def update
     respond_to do |format|
       if @checkout.update(checkout_params)
-        format.html { redirect_to @checkout, notice: 'Checkout was successfully updated.' }
+        format.html { redirect_to bikes_path, notice: 'Checkout was successfully updated.' }
         format.json { render :show, status: :ok, location: @checkout }
       else
         format.html { render :edit }
