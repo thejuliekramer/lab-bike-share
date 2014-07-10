@@ -8,17 +8,22 @@
 <p>
 	<%= @checkout.bike.name %>
 	<br>
+
+
+
   <strong>Accessory:</strong>
-  <% this = @checkout.bike %>
-  <% this.accessories.each do |accessory| %>
+  <% @checkout.bike.accessories.each do |accessory| %>
+  <% if accessory.not_missing == true %>
   <%= accessory.name %>
+  <%= accessory_id = accessory.id%>
+  <% else %>
   <% end %>
-</p>
 
-<p>
-  <strong>Returned at:</strong>
-  <%= @checkout.returned_at %>
-</p>
 
-<%= link_to 'Edit', edit_checkout_path(@checkout) %> |
-<%= link_to 'Back', checkouts_path %>
+
+</p>
+<%= link_to 'Yes', @checkout.bike %> 
+<% end %>
+|
+<%= link_to 'No', '/' %>
+

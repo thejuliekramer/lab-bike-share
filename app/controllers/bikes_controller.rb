@@ -1,5 +1,6 @@
 class BikesController < ApplicationController
   before_action :set_bike, only: [:show, :edit, :update, :destroy]
+  helper_method :first_accessory
 
   # GET /bikes
   # GET /bikes.json
@@ -66,6 +67,11 @@ class BikesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_bike
       @bike = Bike.find(params[:id])
+    end
+
+    # Links to the first accessory to iterate through
+    def first_accessory
+      @first_accessories = Accessory.where(bike_id: params[:bike_id]).order(:created_at).first.id
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

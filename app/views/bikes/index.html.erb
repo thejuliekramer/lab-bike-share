@@ -8,18 +8,16 @@
 		<%= f.submit "Return #{@checkout.bike.name}" %>
 	<% end %>
 
-
 <% else %>
 	<% @bikes.each do |bike| %>
 		<article class="bike<%= bike.is_checked_out? ? ' not-available' : '' %>">
-			<%= image_tag bike.image.url(:medium) %>
-
 			<% if bike.is_checked_out? %>
 				<p class="disabled-button">This bike is currently checked out.</p>
 			<% else %>
 				<%= form_for(@checkout) do |f| %>
 					<%= f.hidden_field :user_id, value: @current_user.id %>
 					<%= f.hidden_field :bike_id, value: bike.id %>
+					<%= link_to image_tag(bike.image.url(:medium)), "/bikes/#{bike.id}/accessories/#{first_accessory}"%>
 					<%= f.submit "Check #{bike.name} out" %>
 				<% end %>
 			<% end %>
