@@ -28,7 +28,7 @@ class CheckoutsController < ApplicationController
 
     respond_to do |format|
       if @checkout.save
-        format.html { redirect_to @checkout, notice: 'Checkout was successfully created.' }
+        format.html { redirect_to bikes_path, notice: 'Checkout was successfully created.' }
         format.json { render :show, status: :created, location: @checkout }
       else
         format.html { render :new }

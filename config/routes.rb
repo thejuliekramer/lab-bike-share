@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   resources :bikes do
     resources :accessories
+    resources :agreement
   end
   resources :accessories
   resources :checkouts
