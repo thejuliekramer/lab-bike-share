@@ -2,18 +2,4 @@
 
 
 
-<p>
-  <strong>Accessory:</strong>
-  <br>
-  <% @bike_accessories.each do | accessory| %>
-   <%= image_tag accessory.image.url(:thumb) %>
-   <br>
-   <%= accessory.name %>
- 
-  <% end %>
-
-</p>
-
-
-  <% @accessory.not_missing %>
 

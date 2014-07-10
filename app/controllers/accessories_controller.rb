@@ -4,13 +4,12 @@ class AccessoriesController < ApplicationController
   # GET /accessories
   # GET /accessories.json
   def index
-    @accessories = Accessory.all
+    bike_accessories
   end
 
   # GET /accessories/1
   # GET /accessories/1.json
   def show
-    bike_accessories
   end
 
   # GET /accessories/new
@@ -69,7 +68,7 @@ class AccessoriesController < ApplicationController
     end
 
     def bike_accessories
-      @bike_accessories = Accessory.where(bike_id: params[:bike_id])
+      @bike_accessories = Accessory.where(bike_id: params[:bike_id]).order("name").page(params[:page]).per(1)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

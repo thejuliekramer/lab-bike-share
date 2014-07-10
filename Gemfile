@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'omniauth'
 gem 'omniauth_cobot'
 
+# Use for pagination
+gem 'kaminari'
 # To encrypt password
 gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
 
