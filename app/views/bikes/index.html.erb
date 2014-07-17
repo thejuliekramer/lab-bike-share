@@ -1,5 +1,5 @@
 <% if @current_user.has_bike? %>
-	<p>You've already got <%= @checkout.bike.name %>.</p>
+	<p>You've checked out - <%= @checkout.bike.name %>.</p>
 	<p>The lock's password is <%= @checkout.bike.lock_password %>.</p>
 	<%= image_tag @checkout.bike.image.url(:medium) %>
 
@@ -18,7 +18,6 @@
 					<%= f.hidden_field :user_id, value: @current_user.id %>
 					<%= f.hidden_field :bike_id, value: bike.id %>
 					<%= link_to image_tag(bike.image.url(:medium)), "/bikes/#{bike.id}/accessories"%>
-					<%= f.submit "Check #{bike.name} out" %>
 				<% end %>
 			<% end %>
 		</article>

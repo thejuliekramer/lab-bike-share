@@ -6,7 +6,8 @@
 		<%= paginate @bike_accessories %>
 
 		<%= form_for(accessory) do |f| %>
-			<% f.hidden_field :not_missing, value: false %>
+			<%= f.hidden_field :bike_id, value: params[:bike_id] %>
+			<%= f.hidden_field :not_missing, value: false %>
 			<%= f.submit "No" %>
 		<% end %>
 <% end %>
